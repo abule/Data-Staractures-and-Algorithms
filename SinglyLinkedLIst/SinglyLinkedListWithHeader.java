@@ -16,11 +16,24 @@ public class SinglyLinkedListWithHeader {
 		
 		//link from header to newNode
 		header.node = newNode;		
-		
+
 	}
 	
 	
 	void removeNode(String s) {
+		if(s == null) return;
+		Node next = header.node;
+		Node previous = header;
+		
+		//No special case for removing first node
+		while(next != null) {
+			if(s.equals(next.data)) {
+				previous.node = next.node;
+				return;
+			}
+			previous = next;
+			next = next.node;		
+		}
 
 	}	
 
