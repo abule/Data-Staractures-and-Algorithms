@@ -52,7 +52,12 @@ public class SinglyLinkedListWithHeader {
 	}
 	
 	void printNodes() {
-		
+		Node next = header.node;
+		while(next != null) {
+			System.out.print(next);
+			next = next.node;
+		}
+		System.out.println();
 	}	
 }
 
