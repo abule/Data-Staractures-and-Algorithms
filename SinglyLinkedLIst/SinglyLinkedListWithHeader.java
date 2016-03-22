@@ -7,7 +7,16 @@ public class SinglyLinkedListWithHeader {
 	}
 
 	void addNode(String s) {
-			
+		
+		Node newNode = new Node();
+		newNode.data = s;
+		
+		//link from newNode to current header.node
+		newNode.node = header.node;
+		
+		//link from header to newNode
+		header.node = newNode;		
+		
 	}
 	
 	
@@ -21,10 +30,7 @@ public class SinglyLinkedListWithHeader {
 	
 	void printNodes() {
 		
-	}
-	
-	
-	
+	}	
 }
 
 
