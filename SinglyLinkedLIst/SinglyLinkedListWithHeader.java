@@ -38,7 +38,17 @@ public class SinglyLinkedListWithHeader {
 	}	
 
 	boolean search(String s) {
-		
+		if(s == null) return false;
+		//start node for searches is header.node
+		Node next = header.node;
+		while(next != null) {
+			String t = next.data;
+			if(s.equals(t)) {
+				return true;
+			}
+			next = next.node;
+		}
+		return false;
 	}
 	
 	void printNodes() {
