@@ -1,8 +1,12 @@
+package InsertionSort;
+
 import java.util.ArrayList;
 //insertion sort
-class InsertionSort{
+public class InsertionSort{
 
+    public InsertionSort(){}
 	public ArrayList<Integer> insertionSort(ArrayList<Integer> list){
+
 
 		return null;
 	}
